@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculo</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header >
+        <h1 class = "titulo">Curriculo</h1>
+    </header>
+
+    <main>
+        <form>
+            <label for="nomeCompleto">Nome Completo</label>
+            <input type="text" id="nomeCompleto" class="inputPadrao" placeholder="Samuel Alcântara" required>
+
+            <label for="rg">RG</label>
+            <input type="number" id="rg" class="inputPadrao" placeholder="0.000.000" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" class="inputPadrao" placeholder="exemplo@email.com" required>
+
+            <label for="whatsapp">Whatsapp</label>
+            <input type="tel" id="whatsapp" class="inputPadrao" placeholder="81987654321" required>
+
+            <label for="numCelular">Numero de celular</label>
+            <input type="tel" id="numCelular" class="inputPadrao" placeholder="81987654321">
+
+            <label for="telefoneFixo">Telefone fixo</label>
+            <input type="tel" id="telefoneFixo" class="inputPadrao" placeholder="81987654321">
+
+            
+            <div class="campo">
+                <p> Se possuir logradouro preencher esse campo</p>
+                
+                <label for="NomeLogradouro">Nome do Logradouro</label>
+                <input type="text" id="NomeLogradouro" class="inputPadrao" placeholder="Nome do Logradouro">
+
+                <label for="localLogradouro">Localização do logradouro</label>
+                <input type="text" id="localLogradouro" class="inputPadrao" placeholder="RUA AV BR">
+
+                <label for="numLogradouro">Numero do logradouro</label>
+                <input type="number" id="numLogradouro" class="inputPadrao" placeholder="45">
+
+                <label for="bairroLogradouro">Bairro </label>
+                <input type="text" id="bairroLogradouro" class="inputPadrao" placeholder="Bairro Novo">
+
+                <label for="cidadeLogradouro">Cidade </label>
+                <input type="text" id="cidadeLogradouro" class="inputPadrao" placeholder="Carpina">
+                
+                <label for="CEP">CEP:
+                    <input name="CEP" id="CEP" required pattern="\d{5}-\d{3}"/>
+                    </label>
+                    <input type="submit" value="Enviar" />
+                
+                <label for="complemento">Complemento</label>
+                <textarea id="complemento" cols="70" rows="10" class="inputPadrao" placeholder="Perto do posto de gasolina" required></textarea>
+
+            </div>
+
+            <div class="campo">
+                <p>Se possuir cnh preencher este campo</p>
+                <label for="cnh">Possui CNH</label>
+                A :<input type="checkbox" id="cnh" value="a"> 
+                B :<input type="checkbox" id="cnh" value="a"> 
+                D :<input type="checkbox" id="cnh" value="a"> 
+                E :<input type="checkbox" id="cnh" value="a"> 
+            </div>
+
+            <div class="campo">
+                <div>
+                    <label for="formacao">Maior Formação</label>
+                    <select id="formacao" required>
+                        <option value="nvMedio">Nivel Medio</option>
+                        <option value="tecnico">Tecnico</option>
+                        <option value="especializao">Especialização</option>
+                        <option value="profissionalizante">Profissionalizante</option>
+                        <option value="graduacao">Graduação</option>
+                        <option value="mestrado">Mestrado</option>
+                    </select>
+                </div>
+                
+
+                <label for="instituicao">Intituição de Ensino</label>
+                <input type="text" id="instituicao" class="inputPadrao" placeholder="UFPE" required>
+
+                <label for="curso">Curso</label>
+                <input type="text" id="curso" class="inputPadrao" placeholder="Contabilidade" required>
+
+                <label for="ano">Ano de Conclusão</label>
+                <input type="month" id="ano" min="1977-01" value="2020-08">
+            </div>
+
+            <div class="campo">
+                <p>Se ja teve experiência profissional preencher este campo</p>
+                <label for="nomeEmpressa">Empressa</label>
+                <input type="text" id="nomeEmpressa" class="inputPadrao" placeholder="SEBRAE"> </br>
+     
+                <input type="number" id="intervaloInicio" class="inputPadrao" placeholder="1980"> ate <input type="number" id="intervaloFim" class="inputPadrao" placeholder="2014"> </br>
+
+                <label for="cargo">Cargo</label>
+                <input type="text" id="cargo" class="inputPadrao" placeholder="Contabilidade"> </br>
+
+                <label for="salario">Valor do ultimo salario</label>
+                <input type="number" id="salario" class="inputPadrao" placeholder="2.000,00">
+
+                <label for="empregado">Esta atualmente empregado?</label>
+                <div>
+                    <input type="radio" id="empregadoSim" name="drone" value="sim"
+                           checked>
+                    <label for="empregadoSim">Sim</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="empregadoNao" name="drone" value="nao">
+                    <label for="empregadoNao">Não</label>
+                </div>
+
+                <label for="pretensaoSalarial">Pretensão Salarial</label>
+                <input type="number" id="pretensaoSalarial" class="inputPadrao" placeholder="5.000,00" required>
+            </div>
+
+            <div class="campo">
+
+                <label for="recursos">Recursos de Tecnologia</label>
+                <textarea id="recursos" cols="70" rows="10" class="inputPadrao" placeholder="Notebook lenovo em casa, um smartphone moto g etc." required></textarea> 
+            </div>
+
+            <div class="campo">
+                <label for="pacoteOffice">Nivel de conhecimento e dominio nas ferramentas do pacote Office</label>
+                <div>
+                    <label for="word">Word</label>
+                    <select id="word" required>
+                        <option value="nenhum">nenhum</option>
+                        <option value="bom">Bom</option>
+                        <option value="regular">Regular</option>
+                        <option value="otimo">Otimo</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="excel">Excel</label>
+                    <select id="world" required>
+                        <option value="nenhum">nenhum</option>
+                        <option value="bom">Bom</option>
+                        <option value="regular">Regular</option>
+                        <option value="otimo">Otimo</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="powerpoint">Power Point</label>
+                    <select id="world" required>
+                        <option value="nenhum">nenhum</option>
+                        <option value="bom">Bom</option>
+                        <option value="regular">Regular</option>
+                        <option value="otimo">Otimo</option>
+                    </select>
+                </div>
+
+                <label for="dados">Nivel de conhecimento de dados em nuvem</label> 
+                <div>
+                    <label for="dropbox">DROPBOX</label>
+                    <select id="dropbox" required>
+                        <option value="nenhum">nenhum</option>
+                        <option value="bom">Bom</option>
+                        <option value="regular">Regular</option>
+                        <option value="otimo">Otimo</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="googleDrive">GOOGLE DRIVE</label>
+                    <select id="googleDrive" required>
+                        <option value="nenhum">nenhum</option>
+                        <option value="bom">Bom</option>
+                        <option value="regular">Regular</option>
+                        <option value="otimo">Otimo</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="mega">MEGA</label>
+                    <select id="mega" required>
+                        <option value="nenhum">nenhum</option>
+                        <option value="bom">Bom</option>
+                        <option value="regular">Regular</option>
+                        <option value="otimo">Otimo</option>
+                    </select>
+                </div>
+
+                <label for="dados">Nivel de conhecimento de Sistemas de Gestão</label> 
+                <div>
+                    <label for="totvs">TOTVS</label>
+                    <select id="totvs" required>
+                        <option value="nenhum">nenhum</option>
+                        <option value="bom">Bom</option>
+                        <option value="regular">Regular</option>
+                        <option value="otimo">Otimo</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="sap">SAP</label>
+                    <select id="sap" required>
+                        <option value="nenhum">nenhum</option>
+                        <option value="bom">Bom</option>
+                        <option value="regular">Regular</option>
+                        <option value="otimo">Otimo</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="gm">GM</label>
+                    <select id="gm" required>
+                        <option value="nenhum">nenhum</option>
+                        <option value="bom">Bom</option>
+                        <option value="regular">Regular</option>
+                        <option value="otimo">Otimo</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="gsi">GSI</label>
+                    <select id="gsi" required>
+                        <option value="nenhum">nenhum</option>
+                        <option value="bom">Bom</option>
+                        <option value="regular">Regular</option>
+                        <option value="otimo">Otimo</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="aps">APS</label>
+                    <select id="aps" required>
+                        <option value="nenhum">nenhum</option>
+                        <option value="bom">Bom</option>
+                        <option value="regular">Regular</option>
+                        <option value="otimo">Otimo</option>
+                    </select>
+                </div>
+
+                <div class="outrosConhecimentos">
+
+                    <label for="outroConhecimento">Recursos de Tecnologia</label>
+                    <textarea id="outroConhecimento" cols="70" rows="10" class="inputPadrao" placeholder="Possuo curso de photshop, Curso de programação em C" ></textarea> 
+                </div>
+            </div>
+
+            <!--Botão de enviar-->
+            <div >
+                <input type="submit" value="Enviar formulário" class="enviar">
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p class="copyright">&copy; Copyright Curriculo de Empresas - 2020</p>
+    </footer>
+
+</body>
