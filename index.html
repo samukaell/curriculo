@@ -37,7 +37,7 @@
 
             
             <div class="campo">
-                <p> Se possuir logradouro preencher esse campo</p>
+                <p>Logradouro</p>
                 
                 <label for="NomeLogradouro">Nome do Logradouro</label>
                 <input type="text" id="NomeLogradouro" class="inputPadrao" placeholder="Nome do Logradouro">
@@ -55,7 +55,7 @@
                 <input type="text" id="cidadeLogradouro" class="inputPadrao" placeholder="Carpina">
                 
                 <label for="CEP">CEP:
-                    <input name="CEP" id="CEP" required pattern="\d{5}-\d{3}"/>
+                    <input name="CEP" id="CEP" required pattern="\d{8}"/>
                     </label>
                     <input type="submit" value="Enviar" />
                 
@@ -67,10 +67,8 @@
             <div class="campo">
                 <p>Se possuir cnh preencher este campo</p>
                 <label for="cnh">Possui CNH</label>
-                A :<input type="checkbox" id="cnh" value="a"> 
-                B :<input type="checkbox" id="cnh" value="a"> 
-                D :<input type="checkbox" id="cnh" value="a"> 
-                E :<input type="checkbox" id="cnh" value="a"> 
+                Sim :<input type="radio" id="cnh" name="cnh" value="sim"> 
+                Não :<input type="radio" id="cnh" name="cnh" value="nao" checked>
             </div>
 
             <div class="campo">
@@ -240,7 +238,7 @@
 
                 <div class="outrosConhecimentos">
 
-                    <label for="outroConhecimento">Recursos de Tecnologia</label>
+                    <label for="outroConhecimento">Cursos de Tecnologia</label>
                     <textarea id="outroConhecimento" cols="70" rows="10" class="inputPadrao" placeholder="Possuo curso de photshop, Curso de programação em C" ></textarea> 
                 </div>
             </div>

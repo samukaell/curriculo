@@ -1,0 +1,25 @@
+{
+  "name": "curriculo",
+  "version": "1.0.0",
+  "description": "Projeto beta curriculo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samukaell/curriculo.git"
+  },
+  "author": "luanerdy and samukaell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samukaell/curriculo/issues"
+  },
+  "homepage": "https://github.com/samukaell/curriculo#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "consign": "^0.1.6",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  }
+}
